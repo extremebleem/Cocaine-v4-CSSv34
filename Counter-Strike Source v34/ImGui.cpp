@@ -5603,7 +5603,7 @@ bool ImGui::KeyButton( const char* label, int* key, const ImVec2& size_arg )
 
 	bool value_changed = false;
 
-	char active_text[4] = { '\0' };
+	char active_text[32] = { '\0' };
 
 	bool hovered = false, held = false;
 
