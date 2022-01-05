@@ -3,6 +3,8 @@
 #include "Debug.hpp"
 #include "Crypt.hpp"
 
+#include <cmath>
+
 namespace Direct3D9
 {
 	Renderer::Renderer()

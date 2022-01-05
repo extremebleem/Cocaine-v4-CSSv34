@@ -4,6 +4,7 @@
 
 #include <vector>
 #include <memory>
+#include <string>
 
 #define INVALID_FONT_HANDLE -1
 

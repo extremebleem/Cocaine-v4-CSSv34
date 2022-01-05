@@ -5603,7 +5603,7 @@ bool ImGui::KeyButton( const char* label, int* key, const ImVec2& size_arg )
 
 	bool value_changed = false;
 
-	char* active_text = nullptr;
+	char active_text[4] = { '\0' };
 
 	bool hovered = false, held = false;
 
@@ -5623,7 +5623,7 @@ bool ImGui::KeyButton( const char* label, int* key, const ImVec2& size_arg )
 			}
 		}
 
-		active_text = "...";
+		sprintf_s(active_text, "...");
 	}
 	else
 	{
@@ -5644,7 +5644,7 @@ bool ImGui::KeyButton( const char* label, int* key, const ImVec2& size_arg )
 			}
 		}
 
-		active_text = ( char* )GetNameFromCode( *key ).c_str();
+		sprintf_s(active_text, GetNameFromCode(*key).c_str());
 	}
 
 	const ImU32 col = GetColorU32( ( hovered && held ) ? ImGuiCol_FrameBgActive : hovered ? ImGuiCol_FrameBgHovered : ImGuiCol_FrameBg );

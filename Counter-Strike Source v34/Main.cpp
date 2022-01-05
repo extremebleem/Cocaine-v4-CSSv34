@@ -49,8 +49,6 @@ void Heart( HMODULE hMod )
 
 void OnProcessAttach( HMODULE hMod, LPVOID lpReserved )
 {
-	Shared::m_pVars = ( Shared::Vars* )lpReserved;
-
 	DisableThreadLibraryCalls( hMod );
 	CreateThread( NULL, NULL, ( LPTHREAD_START_ROUTINE )Heart, ( LPVOID )hMod, NULL, NULL );
 }

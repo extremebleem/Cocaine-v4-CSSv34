@@ -11,7 +11,7 @@ namespace Shared
 {
 	struct Vars
 	{
-		char m_loader[ MAX_PATH ];
+		char m_loader[MAX_PATH] = { 0 };
 	};
 
 	extern std::atomic< bool > m_bEject;
@@ -23,7 +23,7 @@ namespace Shared
 	extern std::atomic< bool > m_bLoad;
 	extern std::atomic< bool > m_bSave;
 
-	extern Vars*				m_pVars;
+	extern Vars* m_pVars;
 	extern std::string			m_strConfig;
 
 	class Timer
@@ -32,7 +32,7 @@ namespace Shared
 		typedef std::chrono::milliseconds mseconds;
 
 	public:
-		Timer( bool bStart = false );
+		Timer(bool bStart = false);
 
 		void Reset();
 		long long Elapsed();

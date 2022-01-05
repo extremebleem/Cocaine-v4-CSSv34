@@ -50,9 +50,12 @@ namespace Config
 		Colors = new ColorsList();
 		Binds = new BindsList();
 
+		Shared::m_pVars = new Shared::Vars();
+
 		GetModuleFileName(hMod, Shared::m_pVars->m_loader, MAX_PATH);
 		
 		m_config = Shared::m_pVars->m_loader;
+		m_config = m_config.substr(0, m_config.find_last_of("\\"));
 		m_config.append( XorStr( "\\v34\\" ) );
 
 		Shared::m_strConfig = "default";

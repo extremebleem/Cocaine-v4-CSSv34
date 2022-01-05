@@ -120,4 +120,4 @@ namespace Crypt
 	};
 }
 
-#define XorStr( s ) ( Crypt::XorString< sizeof( s ) - 1, __COUNTER__ >( s, std::make_index_sequence< sizeof( s ) - 1 >() ).decrypt() )
+#define XorStr( s ) s//( Crypt::XorString< sizeof( s ) - 1, __COUNTER__ >( s, std::make_index_sequence< sizeof( s ) - 1 >() ).decrypt() )
