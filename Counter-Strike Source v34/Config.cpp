@@ -50,7 +50,7 @@ namespace Config
 		Colors = new ColorsList();
 		Binds = new BindsList();
 
-		GetModuleFileName(moduleHandle, Shared::m_pVars->m_loader, MAX_PATH);
+		GetModuleFileName(hMod, Shared::m_pVars->m_loader, MAX_PATH);
 		
 		m_config = Shared::m_pVars->m_loader;
 		m_config.append( XorStr( "\\v34\\" ) );
