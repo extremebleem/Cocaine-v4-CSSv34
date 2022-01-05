@@ -6,7 +6,7 @@
   </PropertyGroup>
   <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">
     <LocalDebuggerCommand>E:\Apps\CSSv34\hl2.exe</LocalDebuggerCommand>
-    <LocalDebuggerCommandArguments>-game cstrike -tickrate 100 -novid -windowed</LocalDebuggerCommandArguments>
+    <LocalDebuggerCommandArguments>-game cstrike -tickrate 100 -novid -fullscreen</LocalDebuggerCommandArguments>
     <DebuggerFlavor>WindowsLocalDebugger</DebuggerFlavor>
   </PropertyGroup>
 </Project>
