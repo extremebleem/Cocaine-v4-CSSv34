@@ -20,7 +20,6 @@ void Heart( HMODULE hMod )
 	if( !Source::Startup() )
 	{
 		DPRINT( XorStr( "[Startup] Can't initialize 'Source' hooks! Ejecting!" ) );
-		Eject();
 		FreeLibraryAndExitThread( hMod, EXIT_SUCCESS );
 	}
 
@@ -43,7 +42,6 @@ void Heart( HMODULE hMod )
 		Sleep( 100 );
 	}
 
-	Eject();
 	FreeLibraryAndExitThread( hMod, EXIT_SUCCESS );
 }
 
