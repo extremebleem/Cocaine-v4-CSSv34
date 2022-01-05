@@ -1,3 +1,3 @@
-** DUBMOOD aka Cocaine v4 **
-# Issues fixed
+# DUBMOOD aka Cocaine v4 
+## Issues fixed
 + Config creation crash
