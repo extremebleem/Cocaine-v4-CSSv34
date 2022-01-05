@@ -16,6 +16,6 @@
 *.dt
 *.bin
 *.enc
-/Debug/
-/Release/
+**/Debug/
+**/Release/
 /enc_temp_folder
